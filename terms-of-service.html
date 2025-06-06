@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - HeySage</title>
+    <meta name="description" content="HeySage Terms of Service - Understand the terms and conditions for using our AI mental health assistant service.">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .header {
+            background: #1a202c;
+            color: white;
+            padding: 48px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            font-weight: 300;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        .header p {
+            font-size: 18px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 64px 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #1a202c;
+            text-decoration: none;
+            margin-bottom: 48px;
+            font-weight: 500;
+            padding: 12px 24px;
+            border: 2px solid #1a202c;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .back-link:hover {
+            background: #1a202c;
+            color: white;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 48px 0;
+            color: #718096;
+        }
+
+        .markdown-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .markdown-content h1 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #1a202c;
+            margin: 48px 0 24px 0;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 16px;
+        }
+
+        .markdown-content h2 {
+            font-size: 24px;
+            font-weight: 500;
+            color: #1a202c;
+            margin: 40px 0 20px 0;
+            border-left: 4px solid #1a202c;
+            padding-left: 16px;
+        }
+
+        .markdown-content h3 {
+            font-size: 20px;
+            font-weight: 500;
+            color: #2d3748;
+            margin: 32px 0 16px 0;
+        }
+
+        .markdown-content h4 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #2d3748;
+            margin: 24px 0 12px 0;
+        }
+
+        .markdown-content p {
+            margin-bottom: 16px;
+            color: #4a5568;
+            line-height: 1.7;
+        }
+
+        .markdown-content ul, .markdown-content ol {
+            margin: 16px 0 16px 24px;
+            color: #4a5568;
+        }
+
+        .markdown-content li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .markdown-content blockquote {
+            background: #fed7d7;
+            border-left: 4px solid #fc8181;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            color: #742a2a;
+            font-weight: 600;
+        }
+
+        .markdown-content code {
+            background: #f7fafc;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            font-size: 14px;
+        }
+
+        .markdown-content pre {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+            overflow-x: auto;
+        }
+
+        .markdown-content pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .markdown-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+        }
+
+        .markdown-content th,
+        .markdown-content td {
+            border: 1px solid #e2e8f0;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .markdown-content th {
+            background: #f7fafc;
+            font-weight: 600;
+        }
+
+        .markdown-content a {
+            color: #1a202c;
+            text-decoration: underline;
+        }
+
+        .markdown-content a:hover {
+            color: #2d3748;
+        }
+
+        .markdown-content strong {
+            color: #1a202c;
+            font-weight: 600;
+        }
+
+        .footer {
+            background: #f7fafc;
+            padding: 32px 0;
+            text-align: center;
+            color: #718096;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .footer a {
+            color: #1a202c;
+            text-decoration: none;
+            margin: 0 16px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 32px;
+            }
+            
+            .container {
+                padding: 0 16px;
+            }
+            
+            .content {
+                padding: 48px 0;
+            }
+            
+            .markdown-content h1 {
+                font-size: 28px;
+            }
+            
+            .markdown-content h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Terms of Service</h1>
+            <p>Service terms and conditions</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            
+            <div class="loading" id="loading">
+                Loading terms of service...
+            </div>
+            
+            <div class="markdown-content" id="content" style="display: none;">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2024 HeySage. All rights reserved. | <a href="index.html">Home</a> | <a href="privacy-policy.html">Privacy Policy</a></p>
+        </div>
+    </div>
+
+    <script>
+        async function loadMarkdownContent() {
+            try {
+                const response = await fetch('Terms_of_Service_EN.md');
+                if (!response.ok) {
+                    throw new Error('Failed to load terms of service');
+                }
+                
+                const markdownText = await response.text();
+                const htmlContent = marked.parse(markdownText);
+                
+                document.getElementById('content').innerHTML = htmlContent;
+                document.getElementById('content').style.display = 'block';
+                document.getElementById('loading').style.display = 'none';
+                
+                // Update header date if available
+                const dateMatch = markdownText.match(/Effective Date:\s*([^\n]+)/);
+                if (dateMatch) {
+                    document.querySelector('.header p').textContent = dateMatch[1];
+                }
+                
+            } catch (error) {
+                console.error('Error loading terms of service:', error);
+                document.getElementById('loading').innerHTML = 'Error loading terms of service. Please try again later.';
+            }
+        }
+
+        // Load content when page loads
+        document.addEventListener('DOMContentLoaded', loadMarkdownContent);
+    </script>
+</body>
+</html> 
