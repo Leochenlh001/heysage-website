@@ -1,20 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HeySage - AI心理健康助手 | 您的专业心理健康AI伙伴</title>
-    <meta name="description" content="HeySage是一款AI心理健康助手，提供24/7专业心理支持。基于CBT认知行为疗法，支持中英文双语，保护隐私安全。">
-    <meta name="keywords" content="心理健康,AI助手,心理咨询,情绪管理,焦虑缓解,压力疏导,CBT,认知行为疗法">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://heysage.com/">
-    <meta property="og:title" content="HeySage - AI心理健康助手">
-    <meta property="og:description" content="随时随地的专业AI心理健康伙伴，提供温暖、私密的心理支持">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <title>HeySage - AI Mental Health Assistant</title>
+    <meta name="description" content="Here to listen. Always by your side. Professional AI mental health support available 24/7.">
+    <meta name="keywords" content="AI mental health, emotional support, psychology, CBT, mental wellness">
     
     <style>
         * {
@@ -22,571 +13,512 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: #fff;
+            color: #2d3748;
+            background: #ffffff;
+            scroll-behavior: smooth;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 24px;
         }
-        
-        /* Header */
-        header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
+
+        /* Navigation */
+        .nav {
             position: fixed;
             top: 0;
             width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
             z-index: 1000;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid #e2e8f0;
         }
-        
-        nav {
+
+        .nav-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 0;
+            padding: 16px 24px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        
+
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #6B73FF;
+            font-size: 24px;
+            font-weight: 600;
+            color: #1a202c;
+            text-decoration: none;
         }
-        
+
         .nav-links {
             display: flex;
+            gap: 32px;
             list-style: none;
-            gap: 2rem;
         }
-        
+
         .nav-links a {
+            color: #4a5568;
             text-decoration: none;
-            color: #333;
             font-weight: 500;
-            transition: color 0.3s;
+            transition: color 0.2s ease;
         }
-        
-        .nav-links a:hover {
-            color: #6B73FF;
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #1a202c;
         }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 120px 0 80px;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-        
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .cta-buttons {
+
+        /* Sections */
+        .section {
+            min-height: 100vh;
             display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .btn {
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s;
-            cursor: pointer;
-            display: inline-block;
-        }
-        
-        .btn-primary {
-            background: #FF6B6B;
-            color: white;
-        }
-        
-        .btn-primary:hover {
-            background: #FF5252;
-            transform: translateY(-2px);
-        }
-        
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: 2px solid white;
-        }
-        
-        .btn-secondary:hover {
-            background: white;
-            color: #667eea;
-        }
-        
-        /* Features Section */
-        .features {
+            align-items: center;
             padding: 80px 0;
-            background: #f8f9ff;
         }
-        
-        .section-title {
+
+        .section-content {
+            width: 100%;
+        }
+
+        /* HeySage Section */
+        .hero {
             text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: #333;
         }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 300;
+            color: #1a202c;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
         }
-        
-        .feature-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
+
+        .slogan {
+            font-size: 24px;
+            color: #4a5568;
+            margin-bottom: 48px;
+            font-weight: 300;
         }
-        
-        .feature-card:hover {
-            transform: translateY(-10px);
+
+        .product-description {
+            font-size: 18px;
+            color: #718096;
+            max-width: 600px;
+            margin: 0 auto 48px;
+            line-height: 1.7;
         }
-        
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        
-        .feature-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #333;
-        }
-        
-        .feature-card p {
-            color: #666;
+
+        .vision {
+            font-size: 20px;
+            color: #2d3748;
+            max-width: 700px;
+            margin: 0 auto 64px;
             line-height: 1.6;
+            font-style: italic;
         }
-        
-        /* Pricing Section */
-        .pricing {
-            padding: 80px 0;
-            background: white;
-        }
-        
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        
-        .pricing-card {
-            background: white;
-            border: 2px solid #e1e5e9;
-            border-radius: 20px;
-            padding: 2rem;
-            text-align: center;
-            position: relative;
-            transition: all 0.3s;
-        }
-        
-        .pricing-card.popular {
-            border-color: #6B73FF;
-            transform: scale(1.05);
-        }
-        
-        .pricing-card.popular::before {
-            content: "推荐";
-            position: absolute;
-            top: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #6B73FF;
+
+        .download-button {
+            display: inline-block;
+            background: #1a202c;
             color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            font-size: 16px;
         }
-        
-        .pricing-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #333;
+
+        .download-button:hover {
+            background: #2d3748;
+            transform: translateY(-1px);
         }
-        
-        .price {
-            font-size: 3rem;
-            font-weight: bold;
-            color: #6B73FF;
-            margin-bottom: 0.5rem;
+
+        /* Content Sections */
+        .content-section {
+            max-width: 800px;
+            margin: 0 auto;
         }
-        
-        .price-period {
-            color: #666;
-            margin-bottom: 2rem;
+
+        .content-section h2 {
+            font-size: 48px;
+            font-weight: 300;
+            color: #1a202c;
+            margin-bottom: 48px;
+            text-align: center;
+            letter-spacing: -0.02em;
         }
-        
+
+        .content-section h3 {
+            font-size: 24px;
+            font-weight: 500;
+            color: #2d3748;
+            margin: 32px 0 16px 0;
+        }
+
+        .content-section p {
+            font-size: 18px;
+            color: #4a5568;
+            margin-bottom: 24px;
+            line-height: 1.7;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            margin: 48px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 24px;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 300;
+            color: #1a202c;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            color: #718096;
+            margin-top: 8px;
+        }
+
         .features-list {
             list-style: none;
-            margin-bottom: 2rem;
-            text-align: left;
+            margin: 32px 0;
         }
-        
+
         .features-list li {
-            margin-bottom: 0.5rem;
-            padding-left: 1.5rem;
+            font-size: 18px;
+            color: #4a5568;
+            margin-bottom: 16px;
+            padding-left: 24px;
             position: relative;
         }
-        
+
         .features-list li::before {
             content: "✓";
-            color: #4CAF50;
-            font-weight: bold;
             position: absolute;
             left: 0;
+            color: #48bb78;
+            font-weight: 600;
         }
-        
-        /* Privacy Section */
-        .privacy {
-            padding: 80px 0;
-            background: #f8f9ff;
-        }
-        
-        .privacy-content {
+
+        .team-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 48px;
+            margin: 48px 0;
         }
-        
-        .privacy-text h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            color: #333;
+
+        .team-item h4 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 16px;
         }
-        
-        .privacy-text p {
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 1rem;
+
+        .team-item p {
+            font-size: 16px;
+            color: #718096;
+            line-height: 1.6;
         }
-        
-        .privacy-features {
-            list-style: none;
-        }
-        
-        .privacy-features li {
-            margin-bottom: 1rem;
-            padding-left: 2rem;
-            position: relative;
-            font-size: 1.1rem;
-        }
-        
-        .privacy-features li::before {
-            content: "🔒";
-            position: absolute;
-            left: 0;
-        }
-        
-        /* Footer */
-        footer {
-            background: #333;
-            color: white;
-            padding: 3rem 0;
+
+        .research-contact {
+            background: #f7fafc;
+            padding: 32px;
+            border-radius: 8px;
+            margin: 48px 0;
             text-align: center;
         }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
+
+        .research-contact a {
+            color: #1a202c;
+            font-weight: 500;
         }
-        
-        .footer-section h3 {
-            margin-bottom: 1rem;
-            color: #6B73FF;
+
+        /* Footer */
+        .footer {
+            background: #f7fafc;
+            padding: 48px 0;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
         }
-        
-        .footer-section a {
-            color: #ccc;
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 24px;
+        }
+
+        .footer-links a {
+            color: #4a5568;
             text-decoration: none;
-            display: block;
-            margin-bottom: 0.5rem;
-            transition: color 0.3s;
+            font-weight: 500;
         }
-        
-        .footer-section a:hover {
-            color: #6B73FF;
+
+        .footer-links a:hover {
+            color: #1a202c;
         }
-        
-        .footer-bottom {
-            border-top: 1px solid #555;
-            padding-top: 2rem;
-            color: #ccc;
+
+        .footer-text {
+            color: #718096;
+            font-size: 14px;
         }
-        
-        /* Responsive */
+
+        /* Mobile Navigation */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .mobile-menu-toggle span {
+            width: 24px;
+            height: 2px;
+            background: #4a5568;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
             .nav-links {
                 display: none;
             }
-            
-            .privacy-content {
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .slogan {
+                font-size: 20px;
+            }
+
+            .content-section h2 {
+                font-size: 36px;
+            }
+
+            .container {
+                padding: 0 16px;
+            }
+
+            .nav-content {
+                padding: 16px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+
+            .team-grid {
                 grid-template-columns: 1fr;
-                text-align: center;
+                gap: 32px;
             }
-            
-            .pricing-card.popular {
-                transform: none;
+
+            .footer-links {
+                flex-direction: column;
+                gap: 16px;
             }
-        }
-        
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .feature-card, .pricing-card {
-            animation: fadeInUp 0.6s ease-out;
-        }
-        
-        /* App Store Badge */
-        .app-store-badge {
-            display: inline-block;
-            margin: 1rem;
-        }
-        
-        .app-store-badge img {
-            height: 60px;
-            transition: transform 0.3s;
-        }
-        
-        .app-store-badge:hover img {
-            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="container">
-            <div class="logo">HeySage</div>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="#heysage" class="logo">HeySage</a>
             <ul class="nav-links">
-                <li><a href="#features">功能特色</a></li>
-                <li><a href="#pricing">定价</a></li>
-                <li><a href="#privacy">隐私安全</a></li>
-                <li><a href="#contact">联系我们</a></li>
+                <li><a href="#heysage" class="active">HeySage</a></li>
+                <li><a href="#why">Why</a></li>
+                <li><a href="#how">How</a></li>
+                <li><a href="#research">Research</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>HeySage</h1>
-            <p>您的专业AI心理健康伙伴<br>随时随地提供温暖、私密的心理支持</p>
-            <div class="cta-buttons">
-                <a href="#" class="btn btn-primary">立即下载</a>
-                <a href="#features" class="btn btn-secondary">了解更多</a>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div style="margin-top: 2rem;">
-                <a href="#" class="app-store-badge">
-                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-                </a>
+        </div>
+    </nav>
+
+    <!-- HeySage Section -->
+    <section id="heysage" class="section">
+        <div class="container">
+            <div class="hero">
+                <h1>HeySage</h1>
+                <p class="slogan">Here to listen. Always by your side.</p>
+                <p class="product-description">
+                    A professional AI mental health assistant that provides 24/7 emotional support, powered by Cognitive Behavioral Therapy principles. Experience personalized conversations designed to help you navigate life's challenges with empathy and understanding.
+                </p>
+                <p class="vision">
+                    "Imagine a world where quality mental health support is accessible to everyone, anytime, anywhere. Where you never have to face your struggles alone, and where professional-grade emotional guidance is just a conversation away."
+                </p>
+                <a href="#download" class="download-button">Download HeySage</a>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
+    <!-- Why Section -->
+    <section id="why" class="section">
         <div class="container">
-            <h2 class="section-title">为什么选择HeySage？</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🧠</div>
-                    <h3>专业心理学支持</h3>
-                    <p>基于认知行为疗法(CBT)的专业对话，为您提供科学有效的心理健康指导和情绪管理建议。</p>
+            <div class="content-section">
+                <h2>Why</h2>
+                <p>
+                    Mental health challenges affect millions of people worldwide, yet access to professional support remains limited by cost, availability, and stigma. We believe everyone deserves quality mental health care, regardless of their circumstances.
+                </p>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">970M</span>
+                        <p class="stat-label">People globally affected by mental health disorders</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">76-85%</span>
+                        <p class="stat-label">Don't receive treatment in low- and middle-income countries</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <p class="stat-label">When mental health support is needed most</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">❤️</div>
-                    <h3>温暖人性化交流</h3>
-                    <p>富有同理心的AI对话体验，创造无判断的安全倾诉空间，24小时随时为您提供心理支持。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🌍</div>
-                    <h3>多语言支持</h3>
-                    <p>支持中文和英文双语对话，流畅的语言切换体验，适应不同文化背景的表达方式。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>隐私安全保障</h3>
-                    <p>所有对话数据端到端加密，支持Apple登录，绝不保存或分享您的隐私信息。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💡</div>
-                    <h3>个性化建议</h3>
-                    <p>根据您的具体情况提供个性化的心理健康建议，帮助您更好地了解和管理自己的情绪。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>即时响应</h3>
-                    <p>无需预约等待，随时随地获得专业的心理支持，帮助您及时处理生活中的心理困扰。</p>
-                </div>
+
+                <h3>Who We Help</h3>
+                <p>
+                    HeySage is designed for anyone seeking emotional support and mental wellness guidance:
+                </p>
+                <ul class="features-list">
+                    <li>Young adults navigating life transitions and career pressures</li>
+                    <li>Individuals dealing with anxiety, stress, and daily emotional challenges</li>
+                    <li>People in underserved areas with limited access to mental health professionals</li>
+                    <li>Those seeking immediate support during difficult moments</li>
+                    <li>Anyone wanting to build better emotional resilience and coping skills</li>
+                </ul>
+
+                <h3>Our Mission</h3>
+                <p>
+                    We're breaking down barriers to mental health support by creating an AI assistant that combines the accessibility of technology with the warmth and expertise of professional psychological care. Our goal is to democratize mental health support, making it available to everyone who needs it, when they need it.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
+    <!-- How Section -->
+    <section id="how" class="section">
         <div class="container">
-            <h2 class="section-title">选择适合您的方案</h2>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>免费体验</h3>
-                    <div class="price">免费</div>
-                    <div class="price-period">体验版</div>
-                    <ul class="features-list">
-                        <li>100条免费消息</li>
-                        <li>基础AI对话功能</li>
-                        <li>多语言支持</li>
-                        <li>Apple Sign In登录</li>
-                    </ul>
-                    <a href="#" class="btn btn-secondary">立即体验</a>
+            <div class="content-section">
+                <h2>How</h2>
+                <p>
+                    HeySage combines cutting-edge AI technology with evidence-based psychological principles to deliver professional-grade mental health support that's both accessible and effective.
+                </p>
+
+                <h3>Our Approach</h3>
+                <ul class="features-list">
+                    <li>CBT-based conversations that help restructure negative thought patterns</li>
+                    <li>Personalized emotional support tailored to individual needs and contexts</li>
+                    <li>24/7 availability ensuring support is always within reach</li>
+                    <li>Privacy-first design with end-to-end encryption and strict data protection</li>
+                    <li>Multilingual support to serve diverse global communities</li>
+                    <li>Continuous learning from therapeutic best practices and user feedback</li>
+                </ul>
+
+                <h3>Implementation Strategy</h3>
+                <p>
+                    Our development process integrates advanced AI capabilities with rigorous psychological expertise:
+                </p>
+
+                <div class="team-grid">
+                    <div class="team-item">
+                        <h4>🤖 AI Product Experts</h4>
+                        <p>Extensive experience in AI product design and commercialization at leading tech companies, with deep expertise in creating successful AI applications that combine technical innovation with exceptional user experience.</p>
+                    </div>
+                    <div class="team-item">
+                        <h4>🧠 Senior Psychology Specialists</h4>
+                        <p>Bachelor's in Psychology from University of Oregon, Dual Master's in Counseling Psychology from Columbia University Teachers College, Licensed Psychotherapist in New York State with nearly 10 years of clinical practice experience.</p>
+                    </div>
+                    <div class="team-item">
+                        <h4>🏥 Professional Institution Partnership</h4>
+                        <p>Deep collaboration with renowned psychological counseling institutions, ensuring AI model professionalism and ethical standards, with expertise in CBT, MBCT and other mainstream international psychotherapy methods.</p>
+                    </div>
                 </div>
-                
-                <div class="pricing-card popular">
-                    <h3>年度订阅</h3>
-                    <div class="price">¥69.9</div>
-                    <div class="price-period">每年 (平均¥5.8/月)</div>
-                    <ul class="features-list">
-                        <li>无限制对话消息</li>
-                        <li>完整AI心理健康功能</li>
-                        <li>专业CBT指导</li>
-                        <li>个性化建议</li>
-                        <li>对话历史保存</li>
-                        <li>优先客户支持</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">选择年度方案</a>
-                </div>
-                
-                <div class="pricing-card">
-                    <h3>月度订阅</h3>
-                    <div class="price">¥9.9</div>
-                    <div class="price-period">每月</div>
-                    <ul class="features-list">
-                        <li>无限制对话消息</li>
-                        <li>完整AI心理健康功能</li>
-                        <li>专业CBT指导</li>
-                        <li>个性化建议</li>
-                        <li>对话历史保存</li>
-                        <li>随时可取消</li>
-                    </ul>
-                    <a href="#" class="btn btn-secondary">选择月度方案</a>
-                </div>
+
+                <h3>Core Competitive Advantages</h3>
+                <ul class="features-list">
+                    <li>Perfect fusion of technology and psychology</li>
+                    <li>International professional background and credentials</li>
+                    <li>Rich AI productization and commercialization experience</li>
+                    <li>Strict psychological counseling ethical standards</li>
+                    <li>Continuous professional supervision and quality control</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Privacy Section -->
-    <section id="privacy" class="privacy">
+    <!-- Research Section -->
+    <section id="research" class="section">
         <div class="container">
-            <div class="privacy-content">
-                <div class="privacy-text">
-                    <h2>您的隐私，我们的承诺</h2>
-                    <p>在HeySage，我们深知心理健康数据的敏感性。我们采用业界最高标准的安全措施保护您的隐私。</p>
-                    <ul class="privacy-features">
-                        <li>端到端加密通信</li>
-                        <li>本地数据存储</li>
-                        <li>不与第三方共享个人数据</li>
-                        <li>符合GDPR和CCPA标准</li>
-                        <li>用户可完全控制数据删除</li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/500x400/6B73FF/FFFFFF?text=Privacy+%26+Security" alt="Privacy and Security" style="width: 100%; border-radius: 20px;">
+            <div class="content-section">
+                <h2>Research</h2>
+                <p>
+                    HeySage is committed to advancing the field of AI-powered mental health support through rigorous research and evidence-based development. We believe that effective mental health technology must be grounded in scientific validation and continuous improvement.
+                </p>
+
+                <p>
+                    Our research initiatives focus on developing and validating AI interventions that demonstrably improve mental health outcomes. We are actively establishing partnerships with leading academic institutions and research centers to conduct clinical studies, analyze real-world effectiveness data, and contribute to the growing body of knowledge in digital mental health.
+                </p>
+
+                <h3>Research Areas</h3>
+                <ul class="features-list">
+                    <li>Efficacy validation of AI-delivered CBT interventions</li>
+                    <li>Personalization algorithms for mental health support</li>
+                    <li>Cross-cultural adaptation of psychological interventions</li>
+                    <li>Privacy-preserving methods for mental health data analysis</li>
+                    <li>Long-term impact assessment of AI mental health tools</li>
+                </ul>
+
+                <div class="research-contact">
+                    <p>
+                        We welcome collaboration opportunities with researchers, clinicians, and institutions who share our commitment to evidence-based mental health innovation. Whether you're interested in clinical trials, outcome studies, or methodological research, we'd love to explore how we can work together.
+                    </p>
+                    <p style="margin-top: 24px;">
+                        <strong>Contact us:</strong> <a href="mailto:research@heysage.app">research@heysage.app</a>
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contact">
+    <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>产品</h3>
-                    <a href="#features">功能特色</a>
-                    <a href="#pricing">定价方案</a>
-                    <a href="#">下载应用</a>
-                    <a href="#">使用指南</a>
-                </div>
-                <div class="footer-section">
-                    <h3>支持</h3>
-                    <a href="mailto:support@heysage.com">客户支持</a>
-                    <a href="#">常见问题</a>
-                    <a href="#">用户反馈</a>
-                    <a href="#">技术支持</a>
-                </div>
-                <div class="footer-section">
-                    <h3>法律</h3>
-                    <a href="privacy-policy.html">隐私政策</a>
-                    <a href="terms-of-service.html">服务条款</a>
-                    <a href="#">Cookie政策</a>
-                    <a href="#">免责声明</a>
-                </div>
-                <div class="footer-section">
-                    <h3>公司</h3>
-                    <a href="#">关于我们</a>
-                    <a href="#">联系我们</a>
-                    <a href="#">新闻动态</a>
-                    <a href="#">职业机会</a>
-                </div>
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="mailto:support@heysage.app">Contact</a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 HeySage. 保留所有权利。</p>
-                <p style="margin-top: 1rem; color: #999; font-size: 0.9rem;">
-                    重要提示：HeySage不能替代专业医疗诊断和治疗。如有严重心理健康问题，请及时寻求专业医生帮助。
-                </p>
-            </div>
+            <p class="footer-text">
+                &copy; 2024 HeySage. Dedicated to making mental health support accessible to everyone.
+            </p>
         </div>
     </footer>
 
@@ -605,14 +537,33 @@
             });
         });
 
-        // Add scroll effect to header
+        // Update active navigation link on scroll
         window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
-            } else {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-            }
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Download button action
+        document.querySelector('.download-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            // Redirect to App Store when available
+            alert('HeySage will be available for download soon. Stay tuned!');
         });
     </script>
 </body>
