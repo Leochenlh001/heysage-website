@@ -78,7 +78,7 @@
             min-height: 100vh;
             display: flex;
             align-items: center;
-            padding: 80px 0;
+            padding: 100px 0;
         }
 
         .section-content {
@@ -99,26 +99,27 @@
         }
 
         .slogan {
-            font-size: 24px;
-            color: #4a5568;
-            margin-bottom: 48px;
-            font-weight: 300;
+            font-size: 38px;
+            color: #1a202c;
+            margin-bottom: 56px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
         }
 
         .product-description {
             font-size: 18px;
             color: #718096;
             max-width: 600px;
-            margin: 0 auto 48px;
-            line-height: 1.7;
+            margin: 0 auto 56px;
+            line-height: 1.8;
         }
 
         .vision {
             font-size: 20px;
             color: #2d3748;
             max-width: 700px;
-            margin: 0 auto 64px;
-            line-height: 1.6;
+            margin: 0 auto 72px;
+            line-height: 1.7;
             font-style: italic;
         }
 
@@ -149,7 +150,7 @@
             font-size: 48px;
             font-weight: 300;
             color: #1a202c;
-            margin-bottom: 48px;
+            margin-bottom: 64px;
             text-align: center;
             letter-spacing: -0.02em;
         }
@@ -158,21 +159,22 @@
             font-size: 24px;
             font-weight: 500;
             color: #2d3748;
-            margin: 32px 0 16px 0;
+            text-align: center;
+            margin: 48px 0 24px 0;
         }
 
         .content-section p {
             font-size: 18px;
             color: #4a5568;
-            margin-bottom: 24px;
-            line-height: 1.7;
+            margin-bottom: 32px;
+            line-height: 1.8;
         }
 
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 32px;
-            margin: 48px 0;
+            gap: 40px;
+            margin: 64px 0;
         }
 
         .stat-item {
@@ -195,15 +197,16 @@
 
         .features-list {
             list-style: none;
-            margin: 32px 0;
+            margin: 48px 0;
         }
 
         .features-list li {
             font-size: 18px;
             color: #4a5568;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
             padding-left: 24px;
             position: relative;
+            line-height: 1.6;
         }
 
         .features-list li::before {
@@ -217,8 +220,8 @@
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 48px;
-            margin: 48px 0;
+            gap: 56px;
+            margin: 64px 0;
         }
 
         .team-item h4 {
@@ -236,9 +239,9 @@
 
         .research-contact {
             background: #f7fafc;
-            padding: 32px;
+            padding: 40px;
             border-radius: 8px;
-            margin: 48px 0;
+            margin: 64px 0;
             text-align: center;
         }
 
@@ -293,7 +296,7 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
+                    @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
@@ -307,7 +310,7 @@
             }
 
             .slogan {
-                font-size: 20px;
+                font-size: 24px;
             }
 
             .content-section h2 {
@@ -323,7 +326,7 @@
             }
 
             .section {
-                padding: 60px 0;
+                padding: 80px 0;
             }
 
             .stats-grid {
@@ -349,8 +352,7 @@
         <div class="nav-content">
             <a href="#heysage" class="logo">HeySage</a>
             <ul class="nav-links">
-                <li><a href="#heysage" class="active">HeySage</a></li>
-                <li><a href="#why">Why</a></li>
+                <li><a href="#why" class="active">Why</a></li>
                 <li><a href="#how">How</a></li>
                 <li><a href="#research">Research</a></li>
             </ul>
@@ -369,10 +371,10 @@
                 <h1>HeySage</h1>
                 <p class="slogan">Here to listen. Always by your side.</p>
                 <p class="product-description">
-                    A professional AI mental health assistant that provides 24/7 emotional support, powered by Cognitive Behavioral Therapy principles. Experience personalized conversations designed to help you navigate life's challenges with empathy and understanding.
+                    Professional AI mental health support, available 24/7. Powered by Cognitive Behavioral Therapy principles.
                 </p>
                 <p class="vision">
-                    "Imagine a world where quality mental health support is accessible to everyone, anytime, anywhere. Where you never have to face your struggles alone, and where professional-grade emotional guidance is just a conversation away."
+                    "Mental health support should be accessible to everyone, anytime, anywhere. You never have to face your struggles alone."
                 </p>
                 <a href="#download" class="download-button">Download HeySage</a>
             </div>
@@ -385,39 +387,15 @@
             <div class="content-section">
                 <h2>Why</h2>
                 <p>
-                    Mental health challenges affect millions of people worldwide, yet access to professional support remains limited by cost, availability, and stigma. We believe everyone deserves quality mental health care, regardless of their circumstances.
+                    Millions of people struggle with their mental health but can’t access a therapist.
+Cost, availability, and stigma keep too many from getting the support they need.
                 </p>
 
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <span class="stat-number">970M</span>
-                        <p class="stat-label">People globally affected by mental health disorders</p>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">76-85%</span>
-                        <p class="stat-label">Don't receive treatment in low- and middle-income countries</p>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">24/7</span>
-                        <p class="stat-label">When mental health support is needed most</p>
-                    </div>
-                </div>
-
-                <h3>Who We Help</h3>
-                <p>
-                    HeySage is designed for anyone seeking emotional support and mental wellness guidance:
-                </p>
-                <ul class="features-list">
-                    <li>Young adults navigating life transitions and career pressures</li>
-                    <li>Individuals dealing with anxiety, stress, and daily emotional challenges</li>
-                    <li>People in underserved areas with limited access to mental health professionals</li>
-                    <li>Those seeking immediate support during difficult moments</li>
-                    <li>Anyone wanting to build better emotional resilience and coping skills</li>
-                </ul>
 
                 <h3>Our Mission</h3>
                 <p>
-                    We're breaking down barriers to mental health support by creating an AI assistant that combines the accessibility of technology with the warmth and expertise of professional psychological care. Our goal is to democratize mental health support, making it available to everyone who needs it, when they need it.
+                    To break the barriers to mental health care.
+To make expert emotional support accessible to all — whenever and wherever they need it.
                 </p>
             </div>
         </div>
@@ -429,47 +407,33 @@
             <div class="content-section">
                 <h2>How</h2>
                 <p>
-                    HeySage combines cutting-edge AI technology with evidence-based psychological principles to deliver professional-grade mental health support that's both accessible and effective.
+                    Cutting-edge AI technology meets evidence-based psychology. Professional-grade mental health support that's accessible and effective.
                 </p>
 
                 <h3>Our Approach</h3>
                 <ul class="features-list">
-                    <li>CBT-based conversations that help restructure negative thought patterns</li>
-                    <li>Personalized emotional support tailored to individual needs and contexts</li>
-                    <li>24/7 availability ensuring support is always within reach</li>
-                    <li>Privacy-first design with end-to-end encryption and strict data protection</li>
-                    <li>Multilingual support to serve diverse global communities</li>
-                    <li>Continuous learning from therapeutic best practices and user feedback</li>
+                    <li>CBT-based conversations that restructure negative thought patterns</li>
+                    <li>24/7 availability - support is always within reach</li>
+                    <li>Privacy-first design with end-to-end encryption</li>
+                    <li>Continuous learning from therapeutic best practices</li>
                 </ul>
-
-                <h3>Implementation Strategy</h3>
-                <p>
-                    Our development process integrates advanced AI capabilities with rigorous psychological expertise:
-                </p>
 
                 <div class="team-grid">
                     <div class="team-item">
                         <h4>🤖 AI Product Experts</h4>
-                        <p>Extensive experience in AI product design and commercialization at leading tech companies, with deep expertise in creating successful AI applications that combine technical innovation with exceptional user experience.</p>
+                        <p>Leading tech company experience in AI product design and commercialization.</p>
                     </div>
                     <div class="team-item">
-                        <h4>🧠 Senior Psychology Specialists</h4>
-                        <p>Bachelor's in Psychology from University of Oregon, Dual Master's in Counseling Psychology from Columbia University Teachers College, Licensed Psychotherapist in New York State with nearly 10 years of clinical practice experience.</p>
+                        <h4>🧠 Psychology Specialists</h4>
+                        <p>Licensed psychotherapist with 10+ years clinical practice. Masters from Columbia University.</p>
                     </div>
                     <div class="team-item">
-                        <h4>🏥 Professional Institution Partnership</h4>
-                        <p>Deep collaboration with renowned psychological counseling institutions, ensuring AI model professionalism and ethical standards, with expertise in CBT, MBCT and other mainstream international psychotherapy methods.</p>
+                        <h4>🏥 Institution Partnership</h4>
+                        <p>Collaboration with psychological counseling institutions ensuring ethical standards and CBT expertise.</p>
                     </div>
                 </div>
 
-                <h3>Core Competitive Advantages</h3>
-                <ul class="features-list">
-                    <li>Perfect fusion of technology and psychology</li>
-                    <li>International professional background and credentials</li>
-                    <li>Rich AI productization and commercialization experience</li>
-                    <li>Strict psychological counseling ethical standards</li>
-                    <li>Continuous professional supervision and quality control</li>
-                </ul>
+              
             </div>
         </div>
     </section>
@@ -480,28 +444,23 @@
             <div class="content-section">
                 <h2>Research</h2>
                 <p>
-                    HeySage is committed to advancing the field of AI-powered mental health support through rigorous research and evidence-based development. We believe that effective mental health technology must be grounded in scientific validation and continuous improvement.
+                    Advancing AI-powered mental health support through rigorous research and evidence-based development. Effective mental health technology must be grounded in scientific validation.
                 </p>
 
-                <p>
-                    Our research initiatives focus on developing and validating AI interventions that demonstrably improve mental health outcomes. We are actively establishing partnerships with leading academic institutions and research centers to conduct clinical studies, analyze real-world effectiveness data, and contribute to the growing body of knowledge in digital mental health.
-                </p>
-
-                <h3>Research Areas</h3>
+                <h3>Research Focus</h3>
                 <ul class="features-list">
-                    <li>Efficacy validation of AI-delivered CBT interventions</li>
-                    <li>Personalization algorithms for mental health support</li>
-                    <li>Cross-cultural adaptation of psychological interventions</li>
-                    <li>Privacy-preserving methods for mental health data analysis</li>
-                    <li>Long-term impact assessment of AI mental health tools</li>
+                    <li>AI-delivered CBT interventions efficacy</li>
+                    <li>Personalization algorithms for mental health</li>
+                    <li>Privacy-preserving data analysis methods</li>
+                    <li>Long-term impact assessment</li>
                 </ul>
 
                 <div class="research-contact">
                     <p>
-                        We welcome collaboration opportunities with researchers, clinicians, and institutions who share our commitment to evidence-based mental health innovation. Whether you're interested in clinical trials, outcome studies, or methodological research, we'd love to explore how we can work together.
+                        Collaboration opportunities for researchers, clinicians, and institutions committed to evidence-based mental health innovation.
                     </p>
                     <p style="margin-top: 24px;">
-                        <strong>Contact us:</strong> <a href="mailto:research@heysage.app">research@heysage.app</a>
+                        <strong>Contact:</strong> <a href="mailto:research@heysage.app">research@heysage.app</a>
                     </p>
                 </div>
             </div>
@@ -557,6 +516,16 @@
                     link.classList.add('active');
                 }
             });
+            
+            // Default to Why section if on HeySage section
+            if (current === 'heysage') {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#why') {
+                        link.classList.add('active');
+                    }
+                });
+            }
         });
 
         // Download button action
