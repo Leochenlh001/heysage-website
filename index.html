@@ -473,7 +473,7 @@
                 <p class="vision">
                     "Mental health support should be accessible to everyone, anytime, anywhere. You never have to face your struggles alone."
                 </p>
-                <a href="#download" class="download-button">Download HeySage</a>
+                <a href="https://apps.apple.com/us/app/heysage/id6746930490" class="download-button" target="_blank">Download HeySage</a>
             </div>
         </div>
     </section>
@@ -685,11 +685,12 @@ To make expert emotional support accessible to all — whenever and wherever the
         });
 
         // Download button action
-        document.querySelector('.download-button').addEventListener('click', function(e) {
+         document.querySelector('.download-button').addEventListener('click', function(e) {
             e.preventDefault();
-            // Redirect to App Store when available
-            alert('HeySage will be available for download soon. Stay tuned!');
+            // Redirect to App Store
+            window.open('https://apps.apple.com/us/app/heysage/id6746930490', '_blank');
         });
+        
     </script>
 </body>
 </html> 
