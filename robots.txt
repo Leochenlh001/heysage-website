@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://leochenlh001.github.io/heysage-website/sitemap.xml
